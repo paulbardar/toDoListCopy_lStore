@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDo List</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+	<main>
+		<!-- Begin ba-container -->
+		<div class="ba-container">
+			<div class="ba-todo-list">
+				<h3 class="ba-title">TODO List</h3>
+				<form class="ba-add-form" action="#" method="post">
+					<input autofocus required id="new-task" type="text" name="new-task" placeholder="Task">
+					<button  class="ba-taskadd-btn" id="add-btn" type="submit">Add</button>
+				</form>
+				<div class="ba-sort">
+					<button class="ba-sort-btn" id="sort-btn">Sort Prioritet</button>
+					<input class="ba-sort__filter" type="text" id="filterInput" name="filter-input" placeholder="Search for task...">
+				</div>
+				<ul class="ba-tasks-list" id="total-list"></ul>
+			</div>
+
+			<div class="ba-modal-delete" id="modalDelete">
+				<div class="ba-modal-delete__container">
+					<h3 class="ba-modal-delete__title">Delete item</h3>
+					<div class="clearfix">
+						<button type="button" id="modalCancelBtn" class="ba-modal-delete__cancel">No</button>
+						<button type="button" id="modalDeleteButton" class="ba-modal-delete__confirm">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ba-container -->
+	</main>
+
+	<script src="js/mainLS.js"></script>
+</body>
+</html>
+
+
+<!--<li class="ba-tasks-item">-->
+	<!--<time class="ba-task-date" datetime="12.10.2018">12.10.2018</time>-->
+	<!--<div class="ba-task-prioritet">-->
+		<!--<button type="button" onclick="this.nextElementSibling.stepDown()">-1</button>-->
+		<!--<input type="number" min="0" max="100" value="1" readonly class="ba-task-prioritet__value">-->
+		<!--<button type="button" onclick="this.previousElementSibling.stepUp()">+1</button>-->
+	<!--</div>-->
+	<!--&lt;!&ndash; <input type="checkbox"> &ndash;&gt;-->
+	<!--<input class="ba-text-field" type="text" data-type="task" value="To learn JavaScript">-->
+	<!--<button data-action="edit">Edit</button>-->
+	<!--<label class="myCheckbox">-->
+		<!--<input type="checkbox">-->
+	<!--</label>-->
+	<!--<button data-action="delete">Delete</button>-->
+
+<!--</li>-->
